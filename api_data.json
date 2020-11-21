@@ -5,6 +5,19 @@
     "title": "Blog Posts",
     "name": "BlogPosts",
     "group": "Blog",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Users unique ID.</p>"
+          }
+        ]
+      }
+    },
     "success": {
       "fields": {
         "Success 200": [
@@ -12,8 +25,15 @@
             "group": "Success 200",
             "type": "String",
             "optional": false,
-            "field": "posts",
-            "description": "<p>all blog posts.</p>"
+            "field": "firstname",
+            "description": "<p>Firstname of the User.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "lastname",
+            "description": "<p>Lastname of the User.</p>"
           }
         ]
       }
@@ -37,6 +57,26 @@
             "optional": false,
             "field": "id",
             "description": "<p>Users unique ID.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "firstname",
+            "description": "<p>Firstname of the User.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "lastname",
+            "description": "<p>Lastname of the User.</p>"
           }
         ]
       }
@@ -133,42 +173,6 @@
   },
   {
     "type": "get",
-    "url": "/log",
-    "title": "Record New Log Entry",
-    "name": "LogEntry",
-    "group": "Log",
-    "version": "2.0.1",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "message",
-            "description": "<p>Log Message.</p>"
-          }
-        ]
-      }
-    },
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "Number",
-            "optional": false,
-            "field": "id",
-            "description": "<p>Entry Unique ID.</p>"
-          }
-        ]
-      }
-    },
-    "filename": "../jackpot-platform/jackpot/log.py",
-    "groupTitle": "Log"
-  },
-  {
-    "type": "get",
     "url": "/login",
     "title": "Login with user",
     "name": "LoginUser",
@@ -193,8 +197,15 @@
             "group": "Success 200",
             "type": "String",
             "optional": false,
-            "field": "token",
-            "description": "<p>Authentication token.</p>"
+            "field": "firstname",
+            "description": "<p>Firstname of the User.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "lastname",
+            "description": "<p>Lastname of the User.</p>"
           }
         ]
       }
@@ -209,6 +220,39 @@
     "title": "Logout User",
     "name": "LogoutUser",
     "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Users unique ID.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "firstname",
+            "description": "<p>Firstname of the User.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "lastname",
+            "description": "<p>Lastname of the User.</p>"
+          }
+        ]
+      }
+    },
     "version": "0.0.0",
     "filename": "../jackpot-platform/jackpot/auth.py",
     "groupTitle": "User"
@@ -219,6 +263,19 @@
     "title": "Register New User",
     "name": "RegisterUser",
     "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Users unique ID.</p>"
+          }
+        ]
+      }
+    },
     "success": {
       "fields": {
         "Success 200": [
