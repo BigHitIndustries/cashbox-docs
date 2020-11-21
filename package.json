@@ -1,0 +1,27 @@
+{
+  "name": "jackpot-docs",
+  "version": "1.0.0",
+  "description": "Documentation for Jackpot API platform",
+  "main": "index.js",
+  "scripts": {
+    "build": "apidoc -i ./../jackpot-platform/jackpot/ -o .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BigHitIndustries/jackpot-docs.git"
+  },
+  "author": "Bradford Knowlton",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/BigHitIndustries/jackpot-docs/issues"
+  },
+  "homepage": "https://github.com/BigHitIndustries/jackpot-docs#readme",
+  "dependencies": {
+    "apidoc": "^0.25.0"
+  },
+  "apidoc": {
+    "title": "Big Hit Industries Jackpot API Platform",
+    "url" : "http://127.0.0.1:500/v1"
+  }
+}
