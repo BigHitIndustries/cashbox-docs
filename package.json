@@ -1,6 +1,6 @@
 {
   "name": "jackpot-docs",
-  "version": "1.0.0",
+  "version": "1.5.0",
   "description": "Documentation for Jackpot API platform",
   "main": "index.js",
   "scripts": {
@@ -16,12 +16,12 @@
   "bugs": {
     "url": "https://github.com/BigHitIndustries/jackpot-docs/issues"
   },
-  "homepage": "https://github.com/BigHitIndustries/jackpot-docs#readme",
+  "homepage": "https://bighitindustries.github.io/jackpot-docs/",
   "dependencies": {
     "apidoc": "^0.25.0"
   },
   "apidoc": {
     "title": "Big Hit Industries Jackpot API Platform",
-    "url" : "http://127.0.0.1:5000/v1"
+    "url" : "http://127.0.0.1:5000/v2"
   }
 }
