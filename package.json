@@ -1,6 +1,6 @@
 {
   "name": "jackpot-docs",
-  "version": "1.5.0",
+  "version": "2.0.1",
   "description": "Documentation for Jackpot API platform",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,7 @@
     "apidoc": "^0.25.0"
   },
   "apidoc": {
+    "name": "Jackpot Documentation",
     "title": "Big Hit Industries Jackpot API Platform",
     "url" : "http://127.0.0.1:5000/v2"
   }

@@ -133,6 +133,42 @@
   },
   {
     "type": "get",
+    "url": "/log",
+    "title": "Record New Log Entry",
+    "name": "LogEntry",
+    "group": "Log",
+    "version": "2.0.1",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>Log Message.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Entry Unique ID.</p>"
+          }
+        ]
+      }
+    },
+    "filename": "../jackpot-platform/jackpot/log.py",
+    "groupTitle": "Log"
+  },
+  {
+    "type": "get",
     "url": "/login",
     "title": "Login with user",
     "name": "LoginUser",
