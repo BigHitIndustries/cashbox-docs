@@ -4,8 +4,13 @@ This is the API documentation for Jackpot Platform. It uses https://apidocjs.com
 
 ## Rebuild documentation
 
-    npm run build
+Note, `jackpot-platform` must also be in same parent folder as `jackpot-docs`
 
+    $ npm install
+    $ npm run build
+    $ git add .
+    $ git commit -m "useful message"
+    $ git push
 
 ## View documentation
 
