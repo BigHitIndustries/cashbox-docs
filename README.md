@@ -14,5 +14,5 @@ Note, `jackpot-platform` must also be in same parent folder as `jackpot-docs`
 
 ## View documentation
 
-https://bighitindustries.github.io/jackpot-docs/
+https://bighitindustries.github.io/cashbox-docs/
 
