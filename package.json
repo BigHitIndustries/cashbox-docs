@@ -1,28 +1,28 @@
 {
-  "name": "jackpot-docs",
-  "version": "2.0.1",
-  "description": "Documentation for Jackpot API platform",
+  "name": "cashbox-docs",
+  "version": "2.1.1",
+  "description": "Documentation for Cashbox API platform",
   "main": "index.js",
   "scripts": {
-    "build": "apidoc -i ./../jackpot-platform/jackpot/ -o .",
+    "build": "apidoc -i ./../cashbox-platform/cashbox/ -o .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BigHitIndustries/jackpot-docs.git"
+    "url": "git+https://github.com/BigHitIndustries/cashbox-docs.git"
   },
   "author": "Bradford Knowlton",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/BigHitIndustries/jackpot-docs/issues"
+    "url": "https://github.com/BigHitIndustries/cashbox-docs/issues"
   },
-  "homepage": "https://bighitindustries.github.io/jackpot-docs/",
+  "homepage": "https://bighitindustries.github.io/cashbox-docs/",
   "dependencies": {
     "apidoc": "^0.25.0"
   },
   "apidoc": {
-    "name": "Jackpot Documentation",
-    "title": "Big Hit Industries Jackpot API Platform",
+    "name": "Cashbox API Documentation",
+    "title": "Big Hit Industries Cashbox API Platform",
     "url": "http://127.0.0.1:5000/v2"
   }
 }
