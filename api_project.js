@@ -1,15 +1,15 @@
 define({
-  "name": "Jackpot Documentation",
-  "title": "Big Hit Industries Jackpot API Platform",
+  "name": "Cashbox API Documentation",
+  "title": "Big Hit Industries Cashbox API Platform",
   "url": "http://127.0.0.1:5000/v2",
-  "version": "2.0.1",
-  "description": "Documentation for Jackpot API platform",
+  "version": "2.1.1",
+  "description": "Documentation for Cashbox API platform",
   "sampleUrl": false,
   "defaultVersion": "0.0.0",
   "apidoc": "0.3.0",
   "generator": {
     "name": "apidoc",
-    "time": "2020-11-21T16:56:06.000Z",
+    "time": "2020-11-24T15:30:01.639Z",
     "url": "https://apidocjs.com",
     "version": "0.25.0"
   }
