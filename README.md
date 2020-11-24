@@ -1,6 +1,6 @@
-# jackpot-docs
+# cashbox-docs
 
-This is the API documentation for Jackpot Platform. It uses https://apidocjs.com/ generator for creating static HTML files from the python source code.
+This is the API documentation for Cashbox Platform. It uses https://apidocjs.com/ generator for creating static HTML files from the python source code.
 
 ## Rebuild documentation
 
@@ -14,5 +14,5 @@ Note, `jackpot-platform` must also be in same parent folder as `jackpot-docs`
 
 ## View documentation
 
-https://bighitindustries.github.io/jackpot-docs/
+https://bighitindustries.github.io/cashbox-docs/
 
