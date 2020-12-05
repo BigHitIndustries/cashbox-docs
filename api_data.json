@@ -253,10 +253,46 @@
     "groupTitle": "Cashbox"
   },
   {
+    "type": "post",
+    "url": "/game",
+    "title": "Create New Game",
+    "name": "CreateNewGame",
+    "group": "Game",
+    "version": "2.0.1",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>Log Message.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "game",
+            "description": "<p>game from values.</p>"
+          }
+        ]
+      }
+    },
+    "filename": "../cashbox-platform/cashbox/game.py",
+    "groupTitle": "Game"
+  },
+  {
     "type": "get",
-    "url": "/Game",
-    "title": "Record New Log Entry",
-    "name": "Game",
+    "url": "/game/:id",
+    "title": "Delete game for given Id",
+    "name": "DeleteGameForGivenId",
     "group": "Game",
     "version": "2.0.1",
     "parameter": {
@@ -280,7 +316,7 @@
             "type": "Number",
             "optional": false,
             "field": "id",
-            "description": "<p>Entry Unique ID.</p>"
+            "description": "<p>Game Id.</p>"
           }
         ]
       }
@@ -344,16 +380,88 @@
         ]
       }
     },
+    "filename": "../cashbox-platform/cashbox/location.py",
+    "groupTitle": "Game"
+  },
+  {
+    "type": "get",
+    "url": "/casboxes",
+    "title": "Games",
+    "name": "GetAllGames",
+    "group": "Game",
+    "version": "2.0.1",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "games",
+            "description": "<p>List of games.</p>"
+          }
+        ]
+      }
+    },
     "filename": "../cashbox-platform/cashbox/game.py",
     "groupTitle": "Game"
   },
   {
     "type": "get",
-    "url": "/games",
-    "title": "Games",
-    "name": "Games",
+    "url": "/game/:id",
+    "title": "Get game for given Id",
+    "name": "GetGameForGivenId",
     "group": "Game",
     "version": "2.0.1",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>Log Message.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "game",
+            "description": "<p>game from Id.</p>"
+          }
+        ]
+      }
+    },
+    "filename": "../cashbox-platform/cashbox/game.py",
+    "groupTitle": "Game"
+  },
+  {
+    "type": "get",
+    "url": "/game/:id",
+    "title": "Update game for given Id",
+    "name": "UpdateGameForGivenId",
+    "group": "Game",
+    "version": "2.0.1",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>Log Message.</p>"
+          }
+        ]
+      }
+    },
     "success": {
       "fields": {
         "Success 200": [
@@ -367,7 +475,7 @@
         ]
       }
     },
-    "filename": "../cashbox-platform/cashbox/location.py",
+    "filename": "../cashbox-platform/cashbox/game.py",
     "groupTitle": "Game"
   },
   {
@@ -1034,42 +1142,6 @@
     },
     "version": "0.0.0",
     "filename": "../cashbox-platform/cashbox/auth.py",
-    "groupTitle": "User"
-  },
-  {
-    "type": "get",
-    "url": "/user",
-    "title": "Record New Log Entry",
-    "name": "User",
-    "group": "User",
-    "version": "2.0.1",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "message",
-            "description": "<p>Log Message.</p>"
-          }
-        ]
-      }
-    },
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "Number",
-            "optional": false,
-            "field": "id",
-            "description": "<p>Entry Unique ID.</p>"
-          }
-        ]
-      }
-    },
-    "filename": "../cashbox-platform/cashbox/user.py",
     "groupTitle": "User"
   },
   {
