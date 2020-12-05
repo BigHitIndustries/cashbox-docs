@@ -1,9 +1,9 @@
 [
   {
     "type": "get",
-    "url": "/auth/status",
-    "title": "Login with user",
-    "name": "LoginUser",
+    "url": "/auth/logout",
+    "title": "Logout user",
+    "name": "LogoutUser",
     "group": "Auth",
     "parameter": {
       "fields": {
@@ -44,9 +44,9 @@
   },
   {
     "type": "get",
-    "url": "/auth/logout",
-    "title": "Login with user",
-    "name": "LoginUser",
+    "url": "/auth/status",
+    "title": "Get User Status",
+    "name": "StatusUser",
     "group": "Auth",
     "parameter": {
       "fields": {
@@ -385,7 +385,7 @@
   },
   {
     "type": "get",
-    "url": "/casboxes",
+    "url": "/games",
     "title": "Games",
     "name": "GetAllGames",
     "group": "Game",
@@ -857,6 +857,42 @@
     "version": "0.0.0",
     "filename": "../cashbox-platform/cashbox/__init__.py",
     "groupTitle": "Static"
+  },
+  {
+    "type": "get",
+    "url": "/transaction/:transaction_id/:voucher_id",
+    "title": "Adds a Voucher to a Transaction",
+    "name": "AddVoucherToTransaction",
+    "group": "Transaction",
+    "version": "2.1.1",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>Log Message.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Entry Unique ID.</p>"
+          }
+        ]
+      }
+    },
+    "filename": "../cashbox-platform/cashbox/transaction.py",
+    "groupTitle": "Transaction"
   },
   {
     "type": "post",
