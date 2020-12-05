@@ -326,65 +326,6 @@ define({ "api": [
   },
   {
     "type": "get",
-    "url": "/Game",
-    "title": "Record New Log Entry",
-    "name": "Game",
-    "group": "Game",
-    "version": "2.0.1",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "message",
-            "description": "<p>Log Message.</p>"
-          }
-        ]
-      }
-    },
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "Number",
-            "optional": false,
-            "field": "id",
-            "description": "<p>Entry Unique ID.</p>"
-          }
-        ]
-      }
-    },
-    "filename": "../cashbox-platform/cashbox/location.py",
-    "groupTitle": "Game"
-  },
-  {
-    "type": "get",
-    "url": "/games",
-    "title": "Games",
-    "name": "Games",
-    "group": "Game",
-    "version": "2.0.1",
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "Number",
-            "optional": false,
-            "field": "id",
-            "description": "<p>Entry Unique ID.</p>"
-          }
-        ]
-      }
-    },
-    "filename": "../cashbox-platform/cashbox/location.py",
-    "groupTitle": "Game"
-  },
-  {
-    "type": "get",
     "url": "/games",
     "title": "Games",
     "name": "GetAllGames",
@@ -503,6 +444,173 @@ define({ "api": [
   },
   {
     "type": "post",
+    "url": "/location",
+    "title": "Create New Location",
+    "name": "CreateNewLocation",
+    "group": "Location",
+    "version": "2.0.1",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>Location Message.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "location",
+            "description": "<p>location from values.</p>"
+          }
+        ]
+      }
+    },
+    "filename": "../cashbox-platform/cashbox/location.py",
+    "groupTitle": "Location"
+  },
+  {
+    "type": "get",
+    "url": "/location/:id",
+    "title": "Delete location for given Id",
+    "name": "DeleteLocationForGivenId",
+    "group": "Location",
+    "version": "2.0.1",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>Location Message.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Location Id.</p>"
+          }
+        ]
+      }
+    },
+    "filename": "../cashbox-platform/cashbox/location.py",
+    "groupTitle": "Location"
+  },
+  {
+    "type": "get",
+    "url": "/locations",
+    "title": "Locations",
+    "name": "GetAllLocations",
+    "group": "Location",
+    "version": "2.0.1",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "locations",
+            "description": "<p>List of locations.</p>"
+          }
+        ]
+      }
+    },
+    "filename": "../cashbox-platform/cashbox/location.py",
+    "groupTitle": "Location"
+  },
+  {
+    "type": "get",
+    "url": "/location/:id",
+    "title": "Get location for given Id",
+    "name": "GetLocationForGivenId",
+    "group": "Location",
+    "version": "2.0.1",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>Location Message.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "location",
+            "description": "<p>location from Id.</p>"
+          }
+        ]
+      }
+    },
+    "filename": "../cashbox-platform/cashbox/location.py",
+    "groupTitle": "Location"
+  },
+  {
+    "type": "put",
+    "url": "/location/:id",
+    "title": "Update location for given Id",
+    "name": "UpdateLocationForGivenId",
+    "group": "Location",
+    "version": "2.0.1",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>Location Message.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Entry Unique ID.</p>"
+          }
+        ]
+      }
+    },
+    "filename": "../cashbox-platform/cashbox/location.py",
+    "groupTitle": "Location"
+  },
+  {
+    "type": "post",
     "url": "/log",
     "title": "Create New Log",
     "name": "CreateNewLog",
@@ -530,6 +638,42 @@ define({ "api": [
             "optional": false,
             "field": "log",
             "description": "<p>log from values.</p>"
+          }
+        ]
+      }
+    },
+    "filename": "../cashbox-platform/cashbox/log.py",
+    "groupTitle": "Log"
+  },
+  {
+    "type": "get",
+    "url": "/log/:id",
+    "title": "Delete log for given Id",
+    "name": "DeleteLogForGivenId",
+    "group": "Log",
+    "version": "2.0.1",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>Log Message.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Log Id.</p>"
           }
         ]
       }
@@ -625,42 +769,6 @@ define({ "api": [
             "optional": false,
             "field": "id",
             "description": "<p>Entry Unique ID.</p>"
-          }
-        ]
-      }
-    },
-    "filename": "../cashbox-platform/cashbox/log.py",
-    "groupTitle": "Log"
-  },
-  {
-    "type": "get",
-    "url": "/log/:id",
-    "title": "Update log for given Id",
-    "name": "UpdateLogForGivenId",
-    "group": "Log",
-    "version": "2.0.1",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "message",
-            "description": "<p>Log Message.</p>"
-          }
-        ]
-      }
-    },
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "Number",
-            "optional": false,
-            "field": "id",
-            "description": "<p>Log Id.</p>"
           }
         ]
       }
@@ -860,6 +968,78 @@ define({ "api": [
   },
   {
     "type": "get",
+    "url": "/location/:location_id/:game_id",
+    "title": "Adds a Voucher to a Transaction",
+    "name": "AddGameToLocation",
+    "group": "Transaction",
+    "version": "2.1.1",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>Log Message.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Entry Unique ID.</p>"
+          }
+        ]
+      }
+    },
+    "filename": "../cashbox-platform/cashbox/location.py",
+    "groupTitle": "Transaction"
+  },
+  {
+    "type": "get",
+    "url": "/location/:location_id/:game_id",
+    "title": "Adds a Voucher to a Transaction",
+    "name": "AddGameToLocation",
+    "group": "Transaction",
+    "version": "2.1.1",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>Log Message.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Entry Unique ID.</p>"
+          }
+        ]
+      }
+    },
+    "filename": "../cashbox-platform/cashbox/location.py",
+    "groupTitle": "Transaction"
+  },
+  {
+    "type": "get",
     "url": "/transaction/:transaction_id/:voucher_id",
     "title": "Adds a Voucher to a Transaction",
     "name": "AddVoucherToTransaction",
@@ -1026,7 +1206,7 @@ define({ "api": [
     "groupTitle": "Transaction"
   },
   {
-    "type": "get",
+    "type": "put",
     "url": "/transaction/:id",
     "title": "Update transaction for given Id",
     "name": "UpdateTransactionForGivenId",
