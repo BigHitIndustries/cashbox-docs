@@ -751,6 +751,173 @@ define({ "api": [
     "groupTitle": "Static"
   },
   {
+    "type": "post",
+    "url": "/transaction",
+    "title": "Create New Transaction",
+    "name": "CreateNewTransaction",
+    "group": "Transaction",
+    "version": "2.0.1",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>Log Message.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "transaction",
+            "description": "<p>transaction from values.</p>"
+          }
+        ]
+      }
+    },
+    "filename": "../cashbox-platform/cashbox/transaction.py",
+    "groupTitle": "Transaction"
+  },
+  {
+    "type": "get",
+    "url": "/transaction/:id",
+    "title": "Delete transaction for given Id",
+    "name": "DeleteTransactionForGivenId",
+    "group": "Transaction",
+    "version": "2.0.1",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>Log Message.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Transaction Id.</p>"
+          }
+        ]
+      }
+    },
+    "filename": "../cashbox-platform/cashbox/transaction.py",
+    "groupTitle": "Transaction"
+  },
+  {
+    "type": "get",
+    "url": "/casboxes",
+    "title": "Transactions",
+    "name": "GetAllTransactions",
+    "group": "Transaction",
+    "version": "2.0.1",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "transactions",
+            "description": "<p>List of transactions.</p>"
+          }
+        ]
+      }
+    },
+    "filename": "../cashbox-platform/cashbox/transaction.py",
+    "groupTitle": "Transaction"
+  },
+  {
+    "type": "get",
+    "url": "/transaction/:id",
+    "title": "Get transaction for given Id",
+    "name": "GetTransactionForGivenId",
+    "group": "Transaction",
+    "version": "2.0.1",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>Log Message.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "transaction",
+            "description": "<p>transaction from Id.</p>"
+          }
+        ]
+      }
+    },
+    "filename": "../cashbox-platform/cashbox/transaction.py",
+    "groupTitle": "Transaction"
+  },
+  {
+    "type": "get",
+    "url": "/transaction/:id",
+    "title": "Update transaction for given Id",
+    "name": "UpdateTransactionForGivenId",
+    "group": "Transaction",
+    "version": "2.0.1",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>Log Message.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Entry Unique ID.</p>"
+          }
+        ]
+      }
+    },
+    "filename": "../cashbox-platform/cashbox/transaction.py",
+    "groupTitle": "Transaction"
+  },
+  {
     "type": "get",
     "url": "/login",
     "title": "Login with user",
