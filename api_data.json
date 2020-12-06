@@ -443,6 +443,78 @@
     "groupTitle": "Global"
   },
   {
+    "type": "get",
+    "url": "/location/:location_id/:cashbox_id",
+    "title": "Adds a Cashbox to a Location",
+    "name": "AddCashboxToLocation",
+    "group": "Location",
+    "version": "2.1.1",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>Log Message.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Entry Unique ID.</p>"
+          }
+        ]
+      }
+    },
+    "filename": "../cashbox-platform/cashbox/location.py",
+    "groupTitle": "Location"
+  },
+  {
+    "type": "get",
+    "url": "/location/:location_id/:game_id",
+    "title": "Adds a Game to a Location",
+    "name": "AddGameToLocation",
+    "group": "Location",
+    "version": "2.1.1",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>Log Message.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Entry Unique ID.</p>"
+          }
+        ]
+      }
+    },
+    "filename": "../cashbox-platform/cashbox/location.py",
+    "groupTitle": "Location"
+  },
+  {
     "type": "post",
     "url": "/location",
     "title": "Create New Location",
@@ -965,78 +1037,6 @@
     "version": "0.0.0",
     "filename": "../cashbox-platform/cashbox/__init__.py",
     "groupTitle": "Static"
-  },
-  {
-    "type": "get",
-    "url": "/location/:location_id/:game_id",
-    "title": "Adds a Voucher to a Transaction",
-    "name": "AddGameToLocation",
-    "group": "Transaction",
-    "version": "2.1.1",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "message",
-            "description": "<p>Log Message.</p>"
-          }
-        ]
-      }
-    },
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "Number",
-            "optional": false,
-            "field": "id",
-            "description": "<p>Entry Unique ID.</p>"
-          }
-        ]
-      }
-    },
-    "filename": "../cashbox-platform/cashbox/location.py",
-    "groupTitle": "Transaction"
-  },
-  {
-    "type": "get",
-    "url": "/location/:location_id/:game_id",
-    "title": "Adds a Voucher to a Transaction",
-    "name": "AddGameToLocation",
-    "group": "Transaction",
-    "version": "2.1.1",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "message",
-            "description": "<p>Log Message.</p>"
-          }
-        ]
-      }
-    },
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "Number",
-            "optional": false,
-            "field": "id",
-            "description": "<p>Entry Unique ID.</p>"
-          }
-        ]
-      }
-    },
-    "filename": "../cashbox-platform/cashbox/location.py",
-    "groupTitle": "Transaction"
   },
   {
     "type": "get",
